@@ -17,4 +17,8 @@ define('WAY', 'via carrera');
 const ADDRESS = 'viale genova';
 echo WAY;
 echo ADDRESS;
+function greet(){
+    define('GREET', 'hi there');
+}
+greet();
 ?>
