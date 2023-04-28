@@ -21,7 +21,10 @@
     </style>
   </head>
   <?php 
-  $name ='Daniele'
+  $name ='Daniele';
+  //Declaring a variable
+  $surname = 'Basile';
+  $alias_name = 'King';
   ?>
   <body>
     <h1>tutorial php</h1>
