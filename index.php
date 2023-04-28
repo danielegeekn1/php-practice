@@ -35,6 +35,10 @@
       <input type="submit" value="send data" />
     </form>
     <!--php if syntax -->
-    
+    <?php if(1<5): ?>
+      Hi I am the first
+    <?php else: ?>
+      I am the second now
+    <?php endif; ?>
   </body>
 </html>
