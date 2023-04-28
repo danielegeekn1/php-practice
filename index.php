@@ -20,8 +20,12 @@
       }
     </style>
   </head>
+  <?php 
+  $name ='Daniele'
+  ?>
   <body>
     <h1>tutorial php</h1>
+    <h3>My name is <?php echo $name; ?></h3>
     <form action="example.php" method="post">
       <label for="name">Name</label>
       <input type="text" name="name" placeholder="insert your name" id="name" />
