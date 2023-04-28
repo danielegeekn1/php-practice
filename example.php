@@ -5,4 +5,10 @@
 $name = $_POST['name'];
 echo $name;
 
+function greet(){
+    $GLOBALS['name'] ='Orazio';
+    echo $GLOBALS['name'];
+}
+greet();
+echo $name
 ?>
