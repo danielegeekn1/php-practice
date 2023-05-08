@@ -48,11 +48,15 @@
   $avatar_name = 'Feanor';
 
   echo $example_string .$avatar_name; // two strings joined
-  echo strlen($example_string);//the length of the string 
+  //echo strlen($example_string);//the length of the string 
   //echo strtolower($example_string);//string in lower case
   //echo strtoupper($example_string);//string in uppercase
-  echo str_word_count($example_string);//return the exact number of words contained in this variable
-
+  //echo str_word_count($example_string);//return the exact number of words contained in this variable
+  //echo strrev($example_string); // string at reverse
+  //echo strpos($example_string, 'Silmarillion'); //position of a specific string in our variable
+  //echo substr($example_string, 12);//start from a specific position of our string
+  echo str_replace('Silmarillion', 'The Lord of the rings',$example_string );//replace the word silmarillion with the one put as second argument
+  
   ?>
   <body>
     <h1>tutorial php</h1>
