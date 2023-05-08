@@ -159,6 +159,7 @@ array_shift($cities);// this will remove the first value of our array instead
 */
 $book = 'Silmarillion';
 $number = 14;
+$is_online = true;
 //conditionals in php
 if ($book === "Silmarillion"){
 echo 'Best book ever';
@@ -193,6 +194,18 @@ if($number > 10 && $number < 20){
 
 if($number > 10 || $number <12){
   echo 'condition with or';
+};
+//cheking value by their negation
+if(!($number == 21)){
+  echo 'number not 21';
+}else{
+  echo 'it is 21';
+};
+
+if((!$is_online)){
+  echo 'false';
+}else{
+  echo 'true';
 };
   ?>
   <body>
