@@ -51,7 +51,9 @@
   $operator_1=36;
   $operator_2=5.10;
   $operator_3='10';
+  $operator_4='(int)34'; // this int is necessary to change its value, which now it'll be int
 
+  $negative_operator=-3;
   //check if a variable is of int type
       //var_dump(is_int($operator_1)); //should return bool true
   //check if a variable is of float type
@@ -59,7 +61,9 @@
   echo $operator_1 + $operator_3; // it adds the number put i string in operator 3 to 36 int data of operator_1 
   $result = $operator_1 + $operator_3;
   var_dump($result); // return int in this case
-  
+  var_dump($operator_4);//it should return int
+  var_dump(abs($negative_operator));//it return the number without the previous sign, so only 3 in this case
+
 
   echo $example_string .$avatar_name; // two strings joined
   //echo strlen($example_string);//the length of the string 
@@ -71,6 +75,13 @@
   //echo substr($example_string, 12);//start from a specific position of our string
   echo str_replace('Silmarillion', 'The Lord of the rings',$example_string );//replace the word silmarillion with the one put as second argument
 
+  //echo min(10, 56, 23, 78, 100); //return the min number
+  //echo max(10, 56, 23, 78, 100);//return the max number
+
+  echo sqrt(25);//return the square root of a number
+  echo round(10.43);//return the rounded number
+
+  echo rand(0, 10); //generate a random number from 0 to 10 
   ?>
   <body>
     <h1>tutorial php</h1>
