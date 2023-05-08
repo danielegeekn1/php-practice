@@ -25,6 +25,12 @@
   //Declaring a variable
   $surname = 'Basile';
   $alias_name = 'King';
+
+  $age = 34;
+  $float_number = 34.09;
+  $is_online = true;
+
+  $hobbies = ['coding', 'comics', 'anime', 'mtb']
   ?>
   <body>
     <h1>tutorial php</h1>
@@ -47,5 +53,13 @@
     <?php else: ?>
       I am the second now
     <?php endif; ?>
+    <?php
+    //this is to have delcared the type of the data
+    var_dump($alias_name); //string 
+    var_dump($age); //number
+    var_dump($float_number);//float
+    var_dump($is_online);//boolean
+    var_dump($hobbies);//array with string data
+    ?>
   </body>
 </html>
