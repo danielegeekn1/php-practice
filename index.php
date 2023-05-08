@@ -207,6 +207,10 @@ if((!$is_online)){
 }else{
   echo 'true';
 };
+
+$condition = 'true';
+$condition_2= 'false';
+$condition_3='maybe';
   ?>
   <body>
     <h1>tutorial php</h1>
@@ -223,6 +227,14 @@ if((!$is_online)){
       />
       <input type="submit" value="send data" />
     </form>
+     <!-- if conditions in HTML -->
+     <?php if($condition === 'true'): ?>
+      <h4>First condition verified </h4>
+    <?php elseif($condition_2 === 'true'): ?>
+      <h4>second coniditon verified</h4>
+      <?php else: ?>
+      <h4>default case</h4>
+      <?php endif; ?>
     <!--php if syntax -->
     <?php if(1<5): ?>
       Hi I am the first
