@@ -158,6 +158,7 @@ array_shift($cities);// this will remove the first value of our array instead
 
 */
 $book = 'Silmarillion';
+$number = 11;
 //conditionals in php
 if ($book === "Silmarillion"){
 echo 'Best book ever';
@@ -172,6 +173,16 @@ if($book === 'Silmarillion'){
   echo 'You are the best';
 }else{
   echo ' Read a Talkien book mate';
+};
+
+if($number < 20){
+  if($number % 2){
+    echo $number ."is even and less then 20";
+  }else{
+    echo 'is odd and less then 20';
+  }
+}else{
+  echo 'Not a valid number';
 };
 
   ?>
