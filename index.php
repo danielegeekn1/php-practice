@@ -211,6 +211,22 @@ if((!$is_online)){
 $condition = 'true';
 $condition_2= 'false';
 $condition_3='maybe';
+
+$favourite_number = 36;
+switch($favourite_number){
+  case 1:
+    echo 'Your favourite number is 1';
+    break;
+  case 2:
+    echo 'Your favourite number is 2';
+    break;
+  case 36:
+    echo 'Your favourite number is 36';
+    break;
+  default:
+   echo ' You have not a favourite number';
+};
+
   ?>
   <body>
     <h1>tutorial php</h1>
