@@ -58,11 +58,12 @@
       //var_dump(is_int($operator_1)); //should return bool true
   //check if a variable is of float type
       //var_dump(is_float($operator_2));
-  echo $operator_1 + $operator_3; // it adds the number put i string in operator 3 to 36 int data of operator_1 
-  $result = $operator_1 + $operator_3;
-  var_dump($result); // return int in this case
-  var_dump($operator_4);//it should return int
-  var_dump(abs($negative_operator));//it return the number without the previous sign, so only 3 in this case
+  
+  //    echo $operator_1 + $operator_3; // it adds the number put i string in operator 3 to 36 int data of operator_1 
+  //$result = $operator_1 + $operator_3;
+  //var_dump($result); // return int in this case
+  //var_dump($operator_4);//it should return int
+  //var_dump(abs($negative_operator));//it return the number without the previous sign, so only 3 in this case
 
 
   //echo $example_string .$avatar_name; // two strings joined
@@ -93,7 +94,14 @@
   echo $operator_1 % $operator_2;
   echo $operator_1 += 5;
   */
- 
+ $cities =['Ala', 'Brentonico', 'Bolzano', 'Merano', 'Braies'];
+ $cities[2] = 'Bressanone';
+ echo $cities[0];
+ echo $cities[2]; // instead of Bolzano we'll have Bressanone, since we've previousl changes that value
+ //for loop to iterate our array
+ for($i=0;$i< count($cities);$i++){
+    echo ($cities[$i]);
+ }
   ?>
   <body>
     <h1>tutorial php</h1>
