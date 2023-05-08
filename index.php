@@ -96,6 +96,8 @@
   */
  $cities =['Ala', 'Brentonico', 'Bolzano', 'Merano', 'Braies'];
  $cities[2] = 'Bressanone';
+ /* 
+
  //echo $cities[0];
  //echo $cities[2]; // instead of Bolzano we'll have Bressanone, since we've previousl changes that value
  //for loop to iterate our array
@@ -152,8 +154,25 @@ array_pop($cities); // this will remove the last value of our array
 array_unshift($cities, 'Ginevra'); // this will add a value as first value of our array
 //print_r($cities);
 array_shift($cities);// this will remove the first value of our array instead
-print_r($cities);
+//print_r($cities);
 
+*/
+$book = 'Silmarillion';
+//conditionals in php
+if ($book === "Silmarillion"){
+echo 'Best book ever';
+}else{
+echo 'Read The Silmarillion';
+};
+
+//specifying more coniditons
+if($book === 'Silmarillion'){
+  echo 'You have chosen the best book ever';
+}else if($book === 'The Lord of the Rings'){
+  echo 'You are the best';
+}else{
+  echo ' Read a Talkien book mate';
+};
   ?>
   <body>
     <h1>tutorial php</h1>
