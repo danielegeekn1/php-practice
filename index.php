@@ -42,7 +42,17 @@
       $this->surname = $surname;
     }
   }
-  $person1 = new Person('Giulia', 'Paolino')
+  $person1 = new Person('Giulia', 'Paolino');
+
+  $example_string = "Silmarillion is epic, clearly since Talkien himself made it";
+  $avatar_name = 'Feanor';
+
+  echo $example_string .$avatar_name; // two strings joined
+  echo strlen($example_string);//the length of the string 
+  //echo strtolower($example_string);//string in lower case
+  //echo strtoupper($example_string);//string in uppercase
+  echo str_word_count($example_string);//return the exact number of words contained in this variable
+
   ?>
   <body>
     <h1>tutorial php</h1>
@@ -67,6 +77,7 @@
     <?php endif; ?>
     <?php
     //this is to have delcared the type of the data
+    /*
     var_dump($alias_name); //string 
     var_dump($age); //int/number
     var_dump($float_number);//float
@@ -79,6 +90,8 @@
     //changing the types of a variable - not bound to the original type
     $name = 44;
     var_dump($name); // now the type will be int/number
+    */
+
     ?>
   </body>
 </html>
