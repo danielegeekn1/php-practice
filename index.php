@@ -144,6 +144,16 @@ for($class = 0; $class < count($classes); $class++){
 //ksort($persons); // sort by key of associative array
 //arsort($persons);
 //print_r($persons);
+
+array_push($cities, 'Napoli'); // this will add a value into our array
+//print_r($cities);
+array_pop($cities); // this will remove the last value of our array
+//print_r($cities);
+array_unshift($cities, 'Ginevra'); // this will add a value as first value of our array
+//print_r($cities);
+array_shift($cities);// this will remove the first value of our array instead
+print_r($cities);
+
   ?>
   <body>
     <h1>tutorial php</h1>
