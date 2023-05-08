@@ -135,6 +135,15 @@ for($class = 0; $class < count($classes); $class++){
   };
 };
 
+// this will order alphabetically our array 
+//sort($cities);
+//rsort($cities); // this will sort it at revers
+//print_r($cities);
+
+//sorting associative arrays
+//ksort($persons); // sort by key of associative array
+//arsort($persons);
+//print_r($persons);
   ?>
   <body>
     <h1>tutorial php</h1>
