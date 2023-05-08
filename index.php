@@ -112,6 +112,11 @@
   "age"=>25
  ];
 echo $persons["name"];//in this case i wanto to be output only the value bound to name key in person array
+//loop to iterate an associative array
+foreach($persons as $key =>$value){
+  echo $key . "=>" . $value . "</br>";
+};
+//it returns both key and value of the persons associative array
 
   ?>
   <body>
