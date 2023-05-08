@@ -158,7 +158,7 @@ array_shift($cities);// this will remove the first value of our array instead
 
 */
 $book = 'Silmarillion';
-$number = 11;
+$number = 14;
 //conditionals in php
 if ($book === "Silmarillion"){
 echo 'Best book ever';
@@ -175,16 +175,25 @@ if($book === 'Silmarillion'){
   echo ' Read a Talkien book mate';
 };
 
+//first nested if condition
 if($number < 20){
   if($number % 2){
-    echo $number ."is even and less then 20";
+    echo $number ."is odd and less then 20";
   }else{
-    echo 'is odd and less then 20';
+    echo 'is even and less then 20';
   }
 }else{
   echo 'Not a valid number';
 };
 
+//condition with logical operators
+if($number > 10 && $number < 20){
+  echo 'Number between 20 and 10';
+};
+
+if($number > 10 || $number <12){
+  echo 'condition with or';
+};
   ?>
   <body>
     <h1>tutorial php</h1>
