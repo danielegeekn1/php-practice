@@ -65,7 +65,7 @@
   var_dump(abs($negative_operator));//it return the number without the previous sign, so only 3 in this case
 
 
-  echo $example_string .$avatar_name; // two strings joined
+  //echo $example_string .$avatar_name; // two strings joined
   //echo strlen($example_string);//the length of the string 
   //echo strtolower($example_string);//string in lower case
   //echo strtoupper($example_string);//string in uppercase
@@ -73,15 +73,27 @@
   //echo strrev($example_string); // string at reverse
   //echo strpos($example_string, 'Silmarillion'); //position of a specific string in our variable
   //echo substr($example_string, 12);//start from a specific position of our string
-  echo str_replace('Silmarillion', 'The Lord of the rings',$example_string );//replace the word silmarillion with the one put as second argument
+  //echo str_replace('Silmarillion', 'The Lord of the rings',$example_string );//replace the word silmarillion with the one put as second argument
 
   //echo min(10, 56, 23, 78, 100); //return the min number
   //echo max(10, 56, 23, 78, 100);//return the max number
 
-  echo sqrt(25);//return the square root of a number
-  echo round(10.43);//return the rounded number
+  //echo sqrt(25);//return the square root of a number
+  //echo round(10.43);//return the rounded number
 
-  echo rand(0, 10); //generate a random number from 0 to 10 
+  //echo rand(0, 10); //generate a random number from 0 to 10 
+
+  /* 
+  different math operations
+  echo 'fo' .$operator_1 + $operator_2;
+
+  echo 'so' .$operator_1 - $operator_2;
+  echo 'to' .$operator_1 * $operator_2;
+  echo 'fo' .$operator_1 / $operator_2;
+  echo $operator_1 % $operator_2;
+  echo $operator_1 += 5;
+  */
+ 
   ?>
   <body>
     <h1>tutorial php</h1>
