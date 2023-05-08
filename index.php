@@ -118,6 +118,23 @@ foreach($persons as $key =>$value){
 };
 //it returns both key and value of the persons associative array
 
+
+//multidimensional arrays - arrays which contain multiple arrays
+$classes =[
+  ['Beren', 'Turin', 'Luthien', 'Thingol'],
+  ['Feanor', 'Fingolfin', 'Finrod', 'Maedhros']
+];
+
+echo $classes[0][2];//That'll report at first array contained in array the value put at third position
+
+//looping a multidimensional array 
+for($class = 0; $class < count($classes); $class++){
+  echo 'Class: ' .$class . "</br>";
+  for ($student=0; $student < count($classes[$class]); $student++){
+    echo $classes[$class][$student] . "</br>";
+  };
+};
+
   ?>
   <body>
     <h1>tutorial php</h1>
