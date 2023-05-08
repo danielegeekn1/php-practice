@@ -96,12 +96,23 @@
   */
  $cities =['Ala', 'Brentonico', 'Bolzano', 'Merano', 'Braies'];
  $cities[2] = 'Bressanone';
- echo $cities[0];
- echo $cities[2]; // instead of Bolzano we'll have Bressanone, since we've previousl changes that value
+ //echo $cities[0];
+ //echo $cities[2]; // instead of Bolzano we'll have Bressanone, since we've previousl changes that value
  //for loop to iterate our array
  for($i=0;$i< count($cities);$i++){
-    echo ($cities[$i]);
+    echo ($cities[$i] . '</br>');
  }
+
+ //associative arrays 
+ //here we can associate a key value pair in the array 
+
+ $persons =[
+  "name"=>"Luca",
+  "surname"=>"Basile",
+  "age"=>25
+ ];
+echo $persons["name"];//in this case i wanto to be output only the value bound to name key in person array
+
   ?>
   <body>
     <h1>tutorial php</h1>
