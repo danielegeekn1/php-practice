@@ -30,7 +30,19 @@
   $float_number = 34.09;
   $is_online = true;
 
-  $hobbies = ['coding', 'comics', 'anime', 'mtb']
+  $hobbies = ['coding', 'comics', 'anime', 'mtb'];
+  $girlfriend;
+
+  class Person
+  {
+    public $name;
+    public $surname;
+    public function __construct($name, $surname){
+      $this->name = $name;
+      $this->surname = $surname;
+    }
+  }
+  $person1 = new Person('Giulia', 'Paolino')
   ?>
   <body>
     <h1>tutorial php</h1>
@@ -56,10 +68,17 @@
     <?php
     //this is to have delcared the type of the data
     var_dump($alias_name); //string 
-    var_dump($age); //number
+    var_dump($age); //int/number
     var_dump($float_number);//float
     var_dump($is_online);//boolean
     var_dump($hobbies);//array with string data
+    var_dump($girlfriend);//NULL - not defined yet
+
+    var_dump($person1); //CLASS - but returned as object with two string data as in fact has been put
+
+    //changing the types of a variable - not bound to the original type
+    $name = 44;
+    var_dump($name); // now the type will be int/number
     ?>
   </body>
 </html>
