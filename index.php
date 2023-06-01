@@ -24,6 +24,12 @@ function changeGlobalScope()
 changeGlobalScope();
 //echo $number; //it will output 10 - since it'll take the value of the variable in global scope
 echo $number; //it'll output 5 since i changed the value of this global variable from inside the function
+
+$sum = function ($val1, $val2) {
+  $newSum = $val1 * $val2;
+  echo $newSum;
+};
+$sum($number, 2);
 ?>
 
 <body>
