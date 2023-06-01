@@ -1,4 +1,5 @@
 <?php require 'functions.php' ?>
+<?php require 'contacts.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
