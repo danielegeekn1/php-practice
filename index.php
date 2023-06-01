@@ -38,7 +38,10 @@ $mkTime = mktime(11, 54, 35, 06, 1, 2021); //5 parameters, hour, minutes, second
 
 //easier way to do it
 $actTime = strtotime('01-06-2023 11:57:00');
-echo $actTime;
+//echo $actTime;
+//getting future timestamp
+$nextDate = date('d-m-Y', strtotime('01-06-2023' . '+7days'));
+echo $nextDate;
 ?>
 
 <body>
