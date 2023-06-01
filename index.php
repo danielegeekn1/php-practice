@@ -1,279 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial php 2023</title>
-    <style>
-      form {
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        padding: 40px;
-      }
-      label {
-        margin-bottom: 5px;
-      }
-      input {
-        margin: 10px;
-      }
-    </style>
-  </head>
-  <?php 
-  $name ='Daniele';
-  //Declaring a variable
-  $surname = 'Basile';
-  $alias_name = 'King';
 
-  $age = 34;
-  $float_number = 34.09;
-  $is_online = true;
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<?php
 
-  $hobbies = ['coding', 'comics', 'anime', 'mtb'];
-  $girlfriend;
-
-  class Person
-  {
-    public $name;
-    public $surname;
-    public function __construct($name, $surname){
-      $this->name = $name;
-      $this->surname = $surname;
-    }
-  }
-  $person1 = new Person('Giulia', 'Paolino');
-
-  $example_string = "Silmarillion is epic, clearly since Talkien himself made it";
-  $avatar_name = 'Feanor';
-
-  //int data types
-  $operator_1=36;
-  $operator_2=5.10;
-  $operator_3='10';
-  $operator_4='(int)34'; // this int is necessary to change its value, which now it'll be int
-
-  $negative_operator=-3;
-  //check if a variable is of int type
-      //var_dump(is_int($operator_1)); //should return bool true
-  //check if a variable is of float type
-      //var_dump(is_float($operator_2));
-  
-  //    echo $operator_1 + $operator_3; // it adds the number put i string in operator 3 to 36 int data of operator_1 
-  //$result = $operator_1 + $operator_3;
-  //var_dump($result); // return int in this case
-  //var_dump($operator_4);//it should return int
-  //var_dump(abs($negative_operator));//it return the number without the previous sign, so only 3 in this case
-
-
-  //echo $example_string .$avatar_name; // two strings joined
-  //echo strlen($example_string);//the length of the string 
-  //echo strtolower($example_string);//string in lower case
-  //echo strtoupper($example_string);//string in uppercase
-  //echo str_word_count($example_string);//return the exact number of words contained in this variable
-  //echo strrev($example_string); // string at reverse
-  //echo strpos($example_string, 'Silmarillion'); //position of a specific string in our variable
-  //echo substr($example_string, 12);//start from a specific position of our string
-  //echo str_replace('Silmarillion', 'The Lord of the rings',$example_string );//replace the word silmarillion with the one put as second argument
-
-  //echo min(10, 56, 23, 78, 100); //return the min number
-  //echo max(10, 56, 23, 78, 100);//return the max number
-
-  //echo sqrt(25);//return the square root of a number
-  //echo round(10.43);//return the rounded number
-
-  //echo rand(0, 10); //generate a random number from 0 to 10 
-
-  /* 
-  different math operations
-  echo 'fo' .$operator_1 + $operator_2;
-
-  echo 'so' .$operator_1 - $operator_2;
-  echo 'to' .$operator_1 * $operator_2;
-  echo 'fo' .$operator_1 / $operator_2;
-  echo $operator_1 % $operator_2;
-  echo $operator_1 += 5;
-  */
- $cities =['Ala', 'Brentonico', 'Bolzano', 'Merano', 'Braies'];
- $cities[2] = 'Bressanone';
- /* 
-
- //echo $cities[0];
- //echo $cities[2]; // instead of Bolzano we'll have Bressanone, since we've previousl changes that value
- //for loop to iterate our array
- for($i=0;$i< count($cities);$i++){
-    echo ($cities[$i] . '</br>');
- }
-
- //associative arrays 
- //here we can associate a key value pair in the array 
-
- $persons =[
-  "name"=>"Luca",
-  "surname"=>"Basile",
-  "age"=>25
- ];
-echo $persons["name"];//in this case i wanto to be output only the value bound to name key in person array
-//loop to iterate an associative array
-foreach($persons as $key =>$value){
-  echo $key . "=>" . $value . "</br>";
+for ($i = 0; $i < 5; $i++) {
+  echo ($i . '</br>');
 };
-//it returns both key and value of the persons associative array
-
-
-//multidimensional arrays - arrays which contain multiple arrays
-$classes =[
-  ['Beren', 'Turin', 'Luthien', 'Thingol'],
-  ['Feanor', 'Fingolfin', 'Finrod', 'Maedhros']
+$personAssocArr = [
+  'name' => 'Luca',
+  'surname' => 'Rossi',
+  'age' => '25'
 ];
-
-echo $classes[0][2];//That'll report at first array contained in array the value put at third position
-
-//looping a multidimensional array 
-for($class = 0; $class < count($classes); $class++){
-  echo 'Class: ' .$class . "</br>";
-  for ($student=0; $student < count($classes[$class]); $student++){
-    echo $classes[$class][$student] . "</br>";
-  };
+// foreach mostly used for associative arrays
+foreach ($personAssocArr as $key => $value) {
+  echo $value . '</br>';
+};
+$i = 0;
+while ($i < 5) {
+  echo $i . '</br>';
+  $i++;
 };
 
-// this will order alphabetically our array 
-//sort($cities);
-//rsort($cities); // this will sort it at revers
-//print_r($cities);
+do {
+  echo $i . '</br>';
+  $i++;
+} while ($i < 5)
+?>
 
-//sorting associative arrays
-//ksort($persons); // sort by key of associative array
-//arsort($persons);
-//print_r($persons);
+<body>
+  <h1>Loop in php</h1>
+</body>
 
-array_push($cities, 'Napoli'); // this will add a value into our array
-//print_r($cities);
-array_pop($cities); // this will remove the last value of our array
-//print_r($cities);
-array_unshift($cities, 'Ginevra'); // this will add a value as first value of our array
-//print_r($cities);
-array_shift($cities);// this will remove the first value of our array instead
-//print_r($cities);
-
-*/
-$book = 'Silmarillion';
-$number = 14;
-$is_online = true;
-//conditionals in php
-if ($book === "Silmarillion"){
-echo 'Best book ever';
-}else{
-echo 'Read The Silmarillion';
-};
-
-//specifying more coniditons
-if($book === 'Silmarillion'){
-  echo 'You have chosen the best book ever';
-}else if($book === 'The Lord of the Rings'){
-  echo 'You are the best';
-}else{
-  echo ' Read a Talkien book mate';
-};
-
-//first nested if condition
-if($number < 20){
-  if($number % 2){
-    echo $number ."is odd and less then 20";
-  }else{
-    echo 'is even and less then 20';
-  }
-}else{
-  echo 'Not a valid number';
-};
-
-//condition with logical operators
-if($number > 10 && $number < 20){
-  echo 'Number between 20 and 10';
-};
-
-if($number > 10 || $number <12){
-  echo 'condition with or';
-};
-//cheking value by their negation
-if(!($number == 21)){
-  echo 'number not 21';
-}else{
-  echo 'it is 21';
-};
-
-if((!$is_online)){
-  echo 'false';
-}else{
-  echo 'true';
-};
-
-$condition = 'true';
-$condition_2= 'false';
-$condition_3='maybe';
-
-$favourite_number = 36;
-switch($favourite_number){
-  case 1:
-    echo 'Your favourite number is 1';
-    break;
-  case 2:
-    echo 'Your favourite number is 2';
-    break;
-  case 36:
-    echo 'Your favourite number is 36';
-    break;
-  default:
-   echo ' You have not a favourite number';
-};
-
-  ?>
-  <body>
-    <h1>tutorial php</h1>
-    <h3>My name is <?php echo $name; ?></h3>
-    <form action="example.php" method="post">
-      <label for="name">Name</label>
-      <input type="text" name="name" placeholder="insert your name" id="name" />
-      <label for="surname">Surname</label>
-      <input
-        type="text"
-        name="surname"
-        placeholder="insert your surname"
-        id="surname"
-      />
-      <input type="submit" value="send data" />
-    </form>
-     <!-- if conditions in HTML -->
-     <?php if($condition === 'true'): ?>
-      <h4>First condition verified </h4>
-    <?php elseif($condition_2 === 'true'): ?>
-      <h4>second coniditon verified</h4>
-      <?php else: ?>
-      <h4>default case</h4>
-      <?php endif; ?>
-    <!--php if syntax -->
-    <?php if(1<5): ?>
-      Hi I am the first
-    <?php else: ?>
-      I am the second now
-    <?php endif; ?>
-    <?php
-    //this is to have delcared the type of the data
-    /*
-    var_dump($alias_name); //string 
-    var_dump($age); //int/number
-    var_dump($float_number);//float
-    var_dump($is_online);//boolean
-    var_dump($hobbies);//array with string data
-    var_dump($girlfriend);//NULL - not defined yet
-
-    var_dump($person1); //CLASS - but returned as object with two string data as in fact has been put
-
-    //changing the types of a variable - not bound to the original type
-    $name = 44;
-    var_dump($name); // now the type will be int/number
-    */
-
-    ?>
-  </body>
 </html>
