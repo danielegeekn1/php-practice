@@ -32,6 +32,9 @@ echo $date2;
 //getting the current timestamp
 $currDate = date('d-m-Y H:i:s', time());
 echo $currDate;
+//creating actual time stamp
+$mkTime = mktime(11, 54, 35, 06, 1, 2021); //5 parameters, hour, minutes, second, month, day, year
+echo $mkTime;
 ?>
 
 <body>
