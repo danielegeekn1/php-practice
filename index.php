@@ -8,66 +8,19 @@
   <title>Document</title>
 </head>
 <?php
-
-// for ($i = 0; $i < 5; $i++) {
-//   echo ($i . '</br>');
-// };
-// $personAssocArr = [
-//   'name' => 'Luca',
-//   'surname' => 'Rossi',
-//   'age' => '25'
-// ];
-// // foreach mostly used for associative arrays
-// foreach ($personAssocArr as $key => $value) {
-//   echo $value . '</br>';
-// };
-// $i = 0;
-// while ($i < 5) {
-//   echo $i . '</br>';
-//   $i++;
-// };
-
-// do {
-//   echo $i . '</br>';
-//   $i++;
-// } while ($i < 5)
-// for ($i = 0; $i < 5; $i++) {
-
-//   if ($i == 3) {
-//     continue;
-//   };
-//   echo $i . '</br>';
-// };
-
-$alaCitizens = [
-  'center' => 'young under thirteen',
-  'pilcante' => 'old men',
-  'santa margherita' => 'chatolic'
-];
-
+$number = 10;
+function displayNumber()
+{
+  //echo $number; // this i can't do since it should be put inside the function for scope reason
+  $number = 8;
+  echo $number; // it will output 8
+};
+displayNumber();
+echo $number; //it will output 10 - since it'll take the value of the variable in global scope
 ?>
 
 <body>
-  <h1>Loop in php</h1>
-  <ul>
-    <?php for ($i = 0; $i < 6; $i++) : ?>
-      <li>list item: <?php echo $i ?></li>
-    <?php endfor; ?>
-  </ul>
-  <ul>
-    <?php foreach ($alaCitizens as $key => $value) : ?>
-      <li>ala citizens : <?php echo $key . '</br>', $value ?></li>
-    <?php endforeach; ?>
-  </ul>
-  <table>
-    <?php foreach ($alaCitizens as $key => $value) : ?>
-      <tr>
-        <?php echo $key ?>
-      </tr>
-      </br>
-      <tr><?php echo $value ?></tr>
-    <?php endforeach; ?>
-  </table>
+  <h1>Functions in php</h1>
 
 </body>
 
