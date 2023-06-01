@@ -1,4 +1,3 @@
-<?php require 'functions.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +8,18 @@
   <title>Document</title>
 </head>
 <?php
+$firstPattern = '/Og[gk]i/'; // this syntax means it has to contain a word beginning with Og then it has to be one of the letter put in square brackedt and end in i
 
+$text = 'Oggi è bel tempo';
+if (preg_match($firstPattern, $text)) {
+  echo 'Match found';
+} else {
+  echo 'match not found';
+};
 ?>
 
 <body>
-  <h1>Including files in php</h1>
-  <a href="contacts.php">Go to contact page</a>
-  <?php greetings() ?>
+  <h1>Learning regex in PHP</h1>
 </body>
 
 </html>
