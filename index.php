@@ -31,17 +31,33 @@
 //   echo $i . '</br>';
 //   $i++;
 // } while ($i < 5)
-for ($i = 0; $i < 5; $i++) {
+// for ($i = 0; $i < 5; $i++) {
 
-  if ($i == 3) {
-    continue;
-  };
-  echo $i . '</br>';
-};
+//   if ($i == 3) {
+//     continue;
+//   };
+//   echo $i . '</br>';
+// };
+
+$alaCitizens = [
+  'center' => 'young under thirteen',
+  'pilcante' => 'old men',
+  'santa margherita' => 'chatolic'
+];
 ?>
 
 <body>
   <h1>Loop in php</h1>
+  <ul>
+    <?php for ($i = 0; $i < 6; $i++) : ?>
+      <li>list item: <?php echo $i ?></li>
+    <?php endfor; ?>
+  </ul>
+  <ul>
+    <?php foreach ($alaCitizens as $key => $value) : ?>
+      <li>ala citizens : <?php echo $key . '</br>', $value ?></li>
+    <?php endforeach; ?>
+  </ul>
 </body>
 
 </html>
