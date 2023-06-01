@@ -15,8 +15,15 @@ function displayNumber()
   $number = 8;
   echo $number; // it will output 8
 };
-displayNumber();
-echo $number; //it will output 10 - since it'll take the value of the variable in global scope
+//displayNumber();
+function changeGlobalScope()
+{
+  $GLOBALS['number'] = 5;
+  echo $GLOBALS['number'] . '</br>'; //it'll output 5 sicne i changed this global variable value
+}
+changeGlobalScope();
+//echo $number; //it will output 10 - since it'll take the value of the variable in global scope
+echo $number; //it'll output 5 since i changed the value of this global variable from inside the function
 ?>
 
 <body>
