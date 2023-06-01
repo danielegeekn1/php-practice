@@ -8,40 +8,34 @@
   <title>Document</title>
 </head>
 <?php
-$number = 10;
-function displayNumber()
-{
-  //echo $number; // this i can't do since it should be put inside the function for scope reason
-  $number = 8;
-  echo $number; // it will output 8
-};
-//displayNumber();
-function changeGlobalScope()
-{
-  $GLOBALS['number'] = 5;
-  echo $GLOBALS['number'] . '</br>'; //it'll output 5 sicne i changed this global variable value
-}
-changeGlobalScope();
-//echo $number; //it will output 10 - since it'll take the value of the variable in global scope
-echo $number; //it'll output 5 since i changed the value of this global variable from inside the function
+//format
+/*
+d- day in numeric format - 1/2/3...
+D - day in string format, but shortened - Mon/Tue/... 
+l - data in string format - not shortened - Monday/Tuesday .. 
+m - month in numeric format - 
+M - month in string format - June/july... 
+y - last two number of year - 88/89...
+Y - year not shortened - 1988/1989... 
 
-//from php 7 we could assign a type to function parameters
-$sum = function (int $val1, int $val2) {
-  $newSum = $val1 * $val2;
-  echo $newSum;
-};
-$sum($number, 2);
-function newSum(int $val1, int $val2)
-{
-  $newNewSum = $val1 * $val2;
-  return $newNewSum;
-};
-echo newSum($number, 4)
+h - hour in anglosaxon way - 0to12  
+H - hour from 0-24 
+i - minutes
+s- seconds
+a - am/pm without camel case 
+A - am/pm with camel case
+*/
+$date = date('d-m-Y', 0); //format and timestamp _ this 0 means the first timestamp ever made in 1970
+$date2 = date('h:i:sA', 0);
+echo $date2;
+
+//getting the current timestamp
+$currDate = date('d-m-Y H:i:s', time());
+echo $currDate;
 ?>
 
 <body>
-  <h1>Functions in php</h1>
-
+  <h1>Working with dates in php</h1>
 </body>
 
 </html>
