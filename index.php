@@ -44,6 +44,7 @@ $alaCitizens = [
   'pilcante' => 'old men',
   'santa margherita' => 'chatolic'
 ];
+
 ?>
 
 <body>
@@ -58,6 +59,16 @@ $alaCitizens = [
       <li>ala citizens : <?php echo $key . '</br>', $value ?></li>
     <?php endforeach; ?>
   </ul>
+  <table>
+    <?php foreach ($alaCitizens as $key => $value) : ?>
+      <tr>
+        <?php echo $key ?>
+      </tr>
+      </br>
+      <tr><?php echo $value ?></tr>
+    <?php endforeach; ?>
+  </table>
+
 </body>
 
 </html>
