@@ -9,28 +9,35 @@
 </head>
 <?php
 
-for ($i = 0; $i < 5; $i++) {
-  echo ($i . '</br>');
-};
-$personAssocArr = [
-  'name' => 'Luca',
-  'surname' => 'Rossi',
-  'age' => '25'
-];
-// foreach mostly used for associative arrays
-foreach ($personAssocArr as $key => $value) {
-  echo $value . '</br>';
-};
-$i = 0;
-while ($i < 5) {
-  echo $i . '</br>';
-  $i++;
-};
+// for ($i = 0; $i < 5; $i++) {
+//   echo ($i . '</br>');
+// };
+// $personAssocArr = [
+//   'name' => 'Luca',
+//   'surname' => 'Rossi',
+//   'age' => '25'
+// ];
+// // foreach mostly used for associative arrays
+// foreach ($personAssocArr as $key => $value) {
+//   echo $value . '</br>';
+// };
+// $i = 0;
+// while ($i < 5) {
+//   echo $i . '</br>';
+//   $i++;
+// };
 
-do {
+// do {
+//   echo $i . '</br>';
+//   $i++;
+// } while ($i < 5)
+for ($i = 0; $i < 5; $i++) {
+
+  if ($i == 3) {
+    continue;
+  };
   echo $i . '</br>';
-  $i++;
-} while ($i < 5)
+};
 ?>
 
 <body>
