@@ -27,14 +27,18 @@ A - am/pm with camel case
 */
 $date = date('d-m-Y', 0); //format and timestamp _ this 0 means the first timestamp ever made in 1970
 $date2 = date('h:i:sA', 0);
-echo $date2;
+//echo $date2;
 
 //getting the current timestamp
 $currDate = date('d-m-Y H:i:s', time());
-echo $currDate;
+//echo $currDate;
 //creating actual time stamp
 $mkTime = mktime(11, 54, 35, 06, 1, 2021); //5 parameters, hour, minutes, second, month, day, year
-echo $mkTime;
+//echo $mkTime;
+
+//easier way to do it
+$actTime = strtotime('01-06-2023 11:57:00');
+echo $actTime;
 ?>
 
 <body>
