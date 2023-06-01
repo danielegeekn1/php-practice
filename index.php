@@ -11,6 +11,8 @@
 $firstPattern = '/Og[gk]i/'; // this syntax means it has to contain a word beginning with Og then it has to be one of the letter put in square brackedt and end in i
 
 $text = 'Oggi è bel tempo';
+
+//function to check if a variable with a string respect the pattern value with preg_match
 if (preg_match($firstPattern, $text)) {
   echo 'Match found';
 } else {
