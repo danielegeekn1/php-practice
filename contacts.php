@@ -10,6 +10,7 @@
 
 <body>
     <h1>Contact page </h1>
+    <a href="index.php">Back to home page</a>
 </body>
 
 </html>

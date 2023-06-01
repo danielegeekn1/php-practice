@@ -1,5 +1,4 @@
 <?php require 'functions.php' ?>
-<?php require 'contacts.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +14,7 @@
 
 <body>
   <h1>Including files in php</h1>
+  <a href="contacts.php">Go to contact page</a>
   <?php greetings() ?>
 </body>
 
