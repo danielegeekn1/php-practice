@@ -23,13 +23,22 @@
 
 //echo preg_replace($spacePatternCheck, $replacement, $imgName);
 
-$pattern = '/[\s,]+/';
-$text = 'My favourite colors are red, green and blue';
-$parts = preg_split($pattern, $text);
+// $pattern = '/[\s,]+/';
+// $text = 'My favourite colors are red, green and blue';
+// $parts = preg_split($pattern, $text);
 
-foreach($parts as $part){
-  echo $part . '</br>';
+// foreach($parts as $part){
+//   echo $part . '</br>';
+// };
+
+$pattern = "/^M/";
+$names = array('Marco Rossi', 'Luca Verdi', 'Mattia Gialli');
+$matches = preg_grep($pattern, $names);
+
+foreach($matches as $match){
+  echo $match . '</br>';
 };
+
 ?>
 
 <body>
