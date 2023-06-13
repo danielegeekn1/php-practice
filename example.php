@@ -1,6 +1,6 @@
 <?php 
 
-$name = $_GET['name'];
-$surname = $_GET['surname'];
+$name = $_POST['name'];
+$surname = $_POST['surname'];
 echo $name .' '.$surname;
 ?>

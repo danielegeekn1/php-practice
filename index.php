@@ -30,9 +30,9 @@
 
 <body>
   <h1>Form handling in PHP</h1>
-  <form class="form_style" action="example.php" method="GET">
+  <form class="form_style" action="example.php" method="POST">
     <label for="name">Name</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" required>
 
     <label for="surname">Surname</label>
     <input type="text" name="surname" id="surname">
