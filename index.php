@@ -31,14 +31,19 @@
 //   echo $part . '</br>';
 // };
 
-$pattern = "/^M/";
-$names = array('Marco Rossi', 'Luca Verdi', 'Mattia Gialli');
-$matches = preg_grep($pattern, $names);
+// $pattern = "/^M/";
+// $names = array('Marco Rossi', 'Luca Verdi', 'Mattia Gialli');
+// $matches = preg_grep($pattern, $names);
 
-foreach($matches as $match){
-  echo $match . '</br>';
-};
+// foreach($matches as $match){
+//   echo $match . '</br>';
+// };
 
+$pattern = '/\bcar\w*/';
+$replacement = '<b>$0</b>';
+$text = 'Words beginning with car: cars, cart, carrot, cartoon. Words ending with car: scar, supercar.';
+
+echo preg_replace($pattern, $replacement, $text);
 ?>
 
 <body>
