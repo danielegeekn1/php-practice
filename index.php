@@ -11,14 +11,15 @@
 $firstPattern = '/Og[gk]i/'; // this syntax means it has to contain a word beginning with Og then it has to be one of the letter put in square brackedt and end in i
 $secondPattern = '/Og[^gk]i/'; // in this case it has not to contain one of the letter between the g or k
 $thirdPattern = '/Og[a-z]i/'; // in this case it has to conain a letter between a and z//that's considered a pattern
+//[A-Z] letter from a to z uppercase [a-Z] - letters from a to z both lowercase or uppercase [0-9] - numbers from 0 to 9
+
 $text = 'Oggi è bel tempo';
 
-//function to check if a variable with a string respect the pattern value with preg_match
-if (preg_match($firstPattern, $text)) {
-  echo 'Match found';
-} else {
-  echo 'match not found';
-};
+$imgName = 'firm logo';
+$spacePatternCheck = '/\s/';
+$replacement = '_';
+
+echo preg_replace($spacePatternCheck, $replacement, $imgName);
 ?>
 
 <body>
